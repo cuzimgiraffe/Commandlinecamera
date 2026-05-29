@@ -24,6 +24,6 @@ Kill/Stop your cam with "Kill Camera - Stop Camera"
 5. Install Requirements with "pip install -r requirements.txt"
 6. run the program with "python main.py"
 
-#Notice
+# Notice
 
 Its an Hobby project i made in a short amount of time, if you want you can expand the Program. I'd like if you would give me a shoutout if you expand it.
