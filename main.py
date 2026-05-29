@@ -8,7 +8,7 @@ from tkinter import ttk
 class CameraApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Camaki - bessere Kameraansicht")
+        self.root.title("Camaki")
         self.root.geometry("1280x820")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
@@ -24,7 +24,7 @@ class CameraApp:
         # Title
         title_label = ctk.CTkLabel(
             self.main_frame,
-            text="funktioner doch mal alter",
+            text="Working",
             font=("Helvetica", 24, "bold")
         )
         title_label.pack(pady=10)
@@ -35,7 +35,7 @@ class CameraApp:
         
         self.start_btn = ctk.CTkButton(
             control_frame,
-            text="Cam an",
+            text="Acivate Camera - Start",
             command=self.start_camera,
             fg_color="#1f6aa5",
             hover_color="#0d47a1"
@@ -44,7 +44,7 @@ class CameraApp:
         
         self.stop_btn = ctk.CTkButton(
             control_frame,
-            text="Cam kill",
+            text="Killing active Camera - Stop",
             command=self.stop_camera,
             fg_color="#c41c3b",
             hover_color="#a01030",
@@ -54,7 +54,7 @@ class CameraApp:
         
         self.toggle_terminal = ctk.CTkButton(
             control_frame,
-            text="cmd view",
+            text="Activate Commandline View - Terminal",
             command=self.toggle_terminal_view,
             fg_color="#00897b",
             hover_color="#004d40"
@@ -68,7 +68,7 @@ class CameraApp:
         # Image label
         self.image_label = ctk.CTkLabel(
             self.display_frame,
-            text="Camera kaka nicht an du hs",
+            text="Camera feed will appear here",
             fg_color="#2b2b2b"
         )
         self.image_label.pack(fill="both", expand=True)
